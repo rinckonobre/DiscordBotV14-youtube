@@ -6,5 +6,3 @@ const client = new ExtendedClient();
 client.start();
 
 export { client, config }
-
-

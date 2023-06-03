@@ -22,9 +22,7 @@
   },
   "dependencies": {
     "colors": "^1.4.0",
-    "discord.js": "^14.9.0",
-    "dotenv": "^16.0.3",
-    "fs": "^0.0.1-security",
-    "ts-lib": "^0.0.5"
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.0.3"
   }
 }
