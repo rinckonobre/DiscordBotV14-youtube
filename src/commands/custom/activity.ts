@@ -1,4 +1,4 @@
-import { ActivityType, ApplicationCommandOptionType, ApplicationCommandType, PresenceStatusData, PresenceUpdateStatus, codeBlock } from "discord.js";
+import { ActivityType, ApplicationCommandOptionType, ApplicationCommandType, Collection, PresenceStatusData, PresenceUpdateStatus, codeBlock } from "discord.js";
 import { Command } from "../../structs/types/Command";
 
 export default new Command({
@@ -73,5 +73,10 @@ export default new Command({
                 return;
             }
         }
-    }
+    },
+    buttons: new Collection([
+        ["", () => {
+
+        }]
+    ])
 })

@@ -1,4 +1,4 @@
-import { ApplicationCommandData, ButtonInteraction, Collection, CommandInteraction, CommandInteractionOptionResolver, ModalSubmitInteraction, StringSelectMenuInteraction } from "discord.js";
+import { ApplicationCommandData, AutocompleteInteraction, ButtonInteraction, Collection, CommandInteraction, CommandInteractionOptionResolver, ModalSubmitInteraction, StringSelectMenuInteraction } from "discord.js";
 import { ExtendedClient } from "../ExtendedClient";
 
 interface CommandProps {
@@ -19,6 +19,7 @@ interface CommandComponents {
 
 export type CommandType = ApplicationCommandData & CommandComponents & {
     run(props: CommandProps): any
+    autoComplete?: (interaction: AutocompleteInteraction) => any
 }
 
 export class Command {

@@ -32,7 +32,7 @@ export default new Event({
                 description: `${author} evite o flood de mensagens por favor!
                 > Leias as regras do servidor para evitar punições severas
                 ${italic("Você poderá enviar mensagens novamente em breve...")}`
-            }).setColor(config.colors.red as ColorResolvable)
+            }).setColor(config.colors["red-dark"] as ColorResolvable)
 
             const message = await channel.send({content: `||${author}||`, embeds: [embed]});
 
